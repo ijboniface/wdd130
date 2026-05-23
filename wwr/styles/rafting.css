@@ -19,19 +19,17 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color: #222;
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.5;
 }
-
-/* ===== Header ===== */
 
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
     padding: 20px;
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 header img {
@@ -49,7 +47,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #003366;
+    color: var(--secondary-color);
     font-size: 15px;
 }
 
@@ -57,15 +55,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ===== Main Layout ===== */
-
 main {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
 }
-
-/* ===== Hero Section ===== */
 
 .hero {
     position: relative;
@@ -77,8 +71,6 @@ main {
     width: 100%;
     height: auto;
 }
-
-/* Hero Heading */
 
 .hero h1 {
     position: absolute;
@@ -92,8 +84,6 @@ main {
     font-weight: bold;
 }
 
-/* Floating Article Box */
-
 .hero article {
     position: absolute;
     bottom: 30px;
@@ -105,36 +95,23 @@ main {
     overflow: hidden;
 }
 
-/* Small Image Inside Article */
-
 .hero article img {
-    float: right;
-    width: 120px;
-    margin-left: 20px;
-    border: 3px solid white;
+    border: 3px solid var(--white-color);
 }
-
-/* ===== Sections ===== */
 
 section {
     margin-bottom: 40px;
 }
 
 section h2 {
-    background-color: #0c2d63;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 section p {
     padding: 0 10px;
     font-size: 16px;
 }
-
-/* ===== Footer ===== */
 
 footer {
     border-top: 1px solid #ccc;
