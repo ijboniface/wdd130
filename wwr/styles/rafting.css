@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #0c2d63;
+    --secondary-color: #003366;
+    --background-color: #f4f4f4;
+    --text-color: #222;
+    --white-color: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +14,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color: #222;
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.5;
 }
 
@@ -18,7 +26,7 @@ header {
     grid-template-columns: 150px 1fr;
     align-items: center;
     padding: 20px;
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 header img {
@@ -34,9 +42,9 @@ nav li {
     margin-bottom: 5px;
 }
 
-nav a {
+nnav a {
     text-decoration: none;
-    color: #003366;
+    color: var(--secondary-color);
     font-size: 15px;
 }
 
@@ -95,10 +103,7 @@ main {
 /* Small Image Inside Article */
 
 .hero article img {
-    float: right;
-    width: 120px;
-    margin-left: 20px;
-    border: 3px solid white;
+    border: 3px solid var(--white-color);
 }
 
 /* ===== Sections ===== */
@@ -108,12 +113,8 @@ section {
 }
 
 section h2 {
-    background-color: #0c2d63;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 section p {
