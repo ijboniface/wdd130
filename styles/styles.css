@@ -1,69 +1,119 @@
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
-
-main {
-    max-width: 840px;
-}
-
-h1 {
-    color: darkblue;
-}
-
-h2 {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-}
-
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: right;
-}
-
-p {
-    padding: 0;
-}
-
-aside {
-    width: 20rem;
-    <aside class="box"
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Class Selector */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation */
+
+nav {
+    background-color: steelblue;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Grid Layout */
+
+.grid {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* Main Section */
+
+main {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+main h1 {
+    color: steelblue;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+main img {
+    width: 180px;
+    float: right;
+    margin-left: 20px;
+    border: 1px solid #999;
+    padding: 4px;
+    box-shadow: 0 0 10px gray;
+}
+
+main p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Aside */
+
+aside {
+    position: relative;
+    background-color: #e5e5e5;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+aside h2 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: darkblue;
+}
+
+aside img {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+}
+
+/* Shared Box Style */
 
 .box {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
     background-color: #ddd;
-    color: #000
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* List */
+
+ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+    border-top: 2px solid steelblue;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
 }
