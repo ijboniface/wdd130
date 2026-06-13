@@ -9,17 +9,6 @@
     gap: 1rem;
 }
 
-.newsletter-section {
-    max-width: 600px;
-    margin: 2rem auto;
-    text-align: center;
-}
-
-.newsletter-form {
-    display: grid;
-    gap: 1rem;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -92,6 +81,69 @@ main {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
+}
+
+/* HOME PAGE HERO */
+
+.home-hero {
+    position: absolute;
+    margin-bottom: 2rem;
+}
+
+.home-hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+
+    max-width: 80%;
+}
+
+.hero-message h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.hero-message p {
+    font-size: 1rem;
+}
+
+/* NEWSLETTER */
+
+.newsletter-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.newsletter-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.newsletter-form label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #888;
+    border-radius: 4px;
 }
 
 /* COMPANY INFO */
@@ -297,6 +349,17 @@ footer p {
     .socialmedia {
         position: static;
     }
+}
+
+.hero-message {
+    position: static;
+    transform: none;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.hero-message h1 {
+    font-size: 1.5rem;
 }
 
 .cta-section,
