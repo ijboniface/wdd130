@@ -11,7 +11,7 @@
 
     <meta name="author" content="Ikechukwu Jonathan Boniface">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rafting.css">
 </head>
 
 <body>
@@ -28,11 +28,13 @@
     <main>
 
         <section class="home-hero">
-            <img src="images/hero.jpg" alt="White water rafting adventure">
+            <div class="hero-image-wrapper">
+                <img src="images/hero.jpg" alt="White water rafting adventure">
 
-            <div class="hero-message">
-                <h1>Experience the Adventure of a Lifetime</h1>
-                <p>Explore thrilling rapids with expert guides.</p>
+                <div class="hero-message">
+                    <h1>Experience the Adventure of a Lifetime</h1>
+                    <p>Explore thrilling rapids with expert guides.</p>
+                </div>
             </div>
         </section>
 
@@ -42,10 +44,10 @@
 
             <form class="newsletter-form">
                 <label for="newsletter-name">Name</label>
-                <input type="text" id="newsletter-name" required>
+                <input type="text" id="newsletter-name" name="name" required>
 
                 <label for="newsletter-email">Email</label>
-                <input type="email" id="newsletter-email" required>
+                <input type="email" id="newsletter-email" name="email" required>
 
                 <button type="submit">Subscribe</button>
             </form>
@@ -56,34 +58,28 @@
 
             <h2>Ready for Your Next Adventure?</h2>
 
-            <p>
-                Discover exciting rafting experiences for every skill level.
-            </p>
+            <p>Discover exciting rafting experiences for every skill level.</p>
 
-            <a href="trips.html" class="cta-button">
-                View Our Trips
-            </a>
+            <a href="trips.html" class="cta-button">View Our Trips</a>
 
         </section>
 
         <section class="home-grid">
 
-            <div>
+            <div class="grid-item">
                 <img src="images/family-rafting.jpg" alt="Family rafting adventure">
 
                 <h3>Our Purpose</h3>
-
                 <p>
                     We create unforgettable outdoor experiences while promoting
                     teamwork, fun, and river safety.
                 </p>
             </div>
 
-            <div>
+            <div class="grid-item">
                 <img src="images/rafting-guide.jpg" alt="Professional rafting guide">
 
                 <h3>What We Offer</h3>
-
                 <p>
                     From beginner-friendly floats to challenging rapids,
                     we have adventures for everyone.

@@ -1,14 +1,3 @@
-.newsletter-section {
-    max-width: 600px;
-    margin: 2rem auto;
-    text-align: center;
-}
-
-.newsletter-form {
-    display: grid;
-    gap: 1rem;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -36,42 +25,28 @@ a {
 header {
     width: 90%;
     max-width: 1100px;
-
     margin: 25px auto;
-
     background: #d8c8ee;
-
     border: 1px solid #888;
-
     display: grid;
-    grid-template-columns: 180px 1fr;
-
+    grid-template-columns: 1fr;
     align-items: center;
-
     padding: 12px 20px;
-}
-
-.logo {
-    width: 90px;
-    margin: 0 auto;
 }
 
 header nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 header nav a {
     width: 95px;
-
     text-align: center;
-
     padding: 8px 0;
-
     border: 1px solid #888;
-
     background: white;
-
     font-size: 0.8rem;
 }
 
@@ -83,16 +58,17 @@ main {
     margin: 0 auto;
 }
 
-/* HOME PAGE HERO */
+/* HERO */
 
 .home-hero {
-    position: absolute;
+    position: relative;
+    width: 100%;
     margin-bottom: 2rem;
 }
 
-.home-hero img {
+.hero-image-wrapper {
+    position: relative;
     width: 100%;
-    height: auto;
 }
 
 .hero-message {
@@ -100,15 +76,11 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     text-align: center;
-
     background: rgba(0, 0, 0, 0.55);
     color: white;
-
     padding: 1.5rem 2rem;
     border-radius: 5px;
-
     max-width: 80%;
 }
 
@@ -146,142 +118,45 @@ main {
     border-radius: 4px;
 }
 
-/* COMPANY INFO */
+/* CTA */
 
-.contact-info {
+.cta-section {
     text-align: center;
-    margin-bottom: 30px;
+    padding: 2rem;
 }
 
-.contact-info h1 {
-    font-size: 2rem;
-    font-weight: normal;
-    margin-bottom: 5px;
+.cta-button {
+    display: inline-block;
+    background-color: #005f73;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
 }
 
-.contact-info p {
-    font-size: 0.9rem;
-    margin: 2px 0;
-}
+/* HOME GRID */
 
-/* CONTACT GRID */
-
-.contact-grid {
+.home-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-
-    align-items: start;
-
-    margin-bottom: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
-/* MAP */
-
-.map-container iframe {
-    width: 100%;
-    height: 320px;
-    border: none;
+.home-grid .grid-item {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
 }
 
-/* FORM */
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    align-items: start;
-    gap: 10px;
-}
-
-.form-row input[type="text"],
-.form-row input[type="email"] {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #888;
-}
-
-.message-group {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.message-group label {
-    display: block;
-    font-size: 0.9rem;
-}
-
-.message-group textarea {
-    width: 100%;
-    padding: 6px;
-    border: 1px solid #888;
-    resize: vertical;
-}
-
-.radio-options label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 0.9rem;
-}
-
-.newsletter {
-    font-size: 0.9rem;
-}
+/* BUTTON (GLOBAL) */
 
 button {
     width: 100%;
-
     padding: 8px;
-
     border: 1px solid #888;
-
     background: #e5e5e5;
-
     cursor: pointer;
-}
-
-/* EMPLOYEES */
-
-.employees {
-    border: 1px solid #888;
-
-    background: #f7f7f7;
-
-    padding: 20px;
-
-    margin-bottom: 25px;
-}
-
-.employees h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.employee-cards {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.employee-cards figure {
-    text-align: center;
-}
-
-.employee-cards img {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    margin: 0 auto 8px;
-}
-
-.employee-cards figcaption {
-    font-size: 0.85rem;
 }
 
 /* FOOTER */
@@ -290,20 +165,16 @@ footer {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto 20px;
-
     background: #d8c8ee;
     border: 1px solid #888;
     padding: 12px 20px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     position: relative;
 }
 
 footer p {
-    margin: 0;
     font-size: 0.8rem;
     text-align: center;
 }
@@ -311,7 +182,6 @@ footer p {
 .socialmedia {
     position: absolute;
     right: 20px;
-
     display: flex;
     gap: 8px;
 }
@@ -319,26 +189,21 @@ footer p {
 .socialmedia img {
     width: 22px;
     height: 22px;
-
     border: 1px solid #888;
     padding: 2px;
     background: #fff;
 }
 
+/* RESPONSIVE */
+
 @media (max-width: 768px) {
 
     header {
         grid-template-columns: 1fr;
-        gap: 15px;
     }
 
-    .contact-grid {
+    .home-grid {
         grid-template-columns: 1fr;
-    }
-
-    .employee-cards {
-        flex-direction: column;
-        gap: 20px;
     }
 
     footer {
@@ -349,78 +214,4 @@ footer p {
     .socialmedia {
         position: static;
     }
-}
-
-.hero-message {
-    position: static;
-    transform: none;
-    max-width: 100%;
-    margin-top: 1rem;
-}
-
-.hero-message h1 {
-    font-size: 1.5rem;
-}
-
-.cta-section,
-.trip-cta {
-    text-align: center;
-    padding: 2rem;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #005f73;
-    color: white;
-    text-decoration: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-}
-
-.home-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin: 2rem;
-}
-
-.home-grid img {
-    width: 100%;
-}
-
-.trip-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem;
-}
-
-.trip-card {
-    border: 1px solid #ccc;
-    padding: 1rem;
-}
-
-.trip-card img {
-    width: 100%;
-}
-
-.trip-table {
-    margin: 2rem;
-}
-
-.trip-table table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.trip-table th,
-.trip-table td {
-    border: 1px solid #ccc;
-    padding: 0.75rem;
-    text-align: center;
-}
-
-.trip-table th {
-    background-color: #005f73;
-    color: white;
 }
